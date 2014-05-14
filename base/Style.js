@@ -18,9 +18,8 @@ function Style(styles) {
         if(cssProperty.charAt(0) == '-') {
             return false;
         }
-        var i = 0;
-        for(var key in partOfProperty) {
-            if(i++ == 0) {
+        for(var key = 0; key<partOfProperty.length; key++) {
+            if(key == 0) {
                 jsProperty = partOfProperty[key];
                 continue;
             }

@@ -2,10 +2,17 @@
 <html>
 <head>
     <title>Demo Base</title>
-    <script type="text/javascript" src="js/Style.js"></script>
-    <script type="text/javascript" src="js/Alert.js"></script>
-    <script type="text/javascript" src="js/Exchange.js"></script>
-    <script type="text/javascript" src="js/Object.js"></script>
+    <script type="text/javascript" src="../XNovalWeb.js"></script>
+    <script type="text/javascript">
+        (function (w) {
+            w.onload = function () {
+                XNovalWeb.include('base.Object');
+                XNovalWeb.include('base.Style');
+                XNovalWeb.include('base.Exchange');
+                XNovalWeb.include('base.Alert');
+            }
+        })(window);
+    </script>
 </head>
 <body>
 
