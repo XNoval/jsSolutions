@@ -7,5 +7,8 @@ var XNovalWeb = {
         var script = document.createElement('script');
         script.src = '/' + alias.split('.').join('/') + '.js';
         body.appendChild(script);
+    },
+    module: function (module) {
+
     }
 };

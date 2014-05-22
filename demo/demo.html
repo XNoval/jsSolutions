@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Demo Base</title>
-    <script type="text/javascript" src="../XNovalWeb.js"></script>
+    <script type="text/javascript" src="/base/XNovalWeb.js"></script>
     <script type="text/javascript">
         (function (w) {
             w.onload = function () {
@@ -10,6 +10,11 @@
                 XNovalWeb.include('base.Style');
                 XNovalWeb.include('base.Exchange');
                 XNovalWeb.include('base.Alert');
+
+                XNovalWeb.include('mvc.Collection');
+                XNovalWeb.include('mvc.Model');
+                XNovalWeb.include('mvc.View');
+                XNovalWeb.include('mvc.Controller');
             }
         })(window);
     </script>
